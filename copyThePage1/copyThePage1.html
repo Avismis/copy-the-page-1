@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>doppageganger</title>
-  <style>
-    .button-container button, .button-container input {
-      width: 7em;
-      height: 4em;
-    }
-  </style>
+  <link rel="stylesheet" href="copyThePage1.styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="block wholeSquare"
-     style="color:white; font-weight: bolder;width: 80%;height: 900px;background: #b1e8e8;display: flex;flex-direction: column;align-items: center; border-radius: 15px"
->
-  <div style="padding: 50px">
+<div class="wholeSquare">
+  <div class="wholeSquare__imagen">
     <img src="./img/logo.svg" alt="SPLITTER">
   </div>
-  <div class= "block whiteSquare"
+  <div class= "whiteSquare-container"
        style="width: 80%;height: 400px;background: white; display: flex;flex-direction: row;padding: 50px; border-radius: 15px">
     <div style="flex-grow: 1;display: flex;flex-direction: column; color: gray; align-content: space-around; justify-content: space-around; align-items: flex-start">
-      <div style="flex-grow: 1">
-        <label style="width: 80%;display: inline-block; font-family: monospace">
+      <div class= "whiteSquare__text" style="flex-grow: 1">
+        <label style="width: 80%;display: inline-block;">
           Bill</label>
         <label>
           <input style="padding: 10px; width: 450px; border-radius: 5px; background: hsl(189, 41%, 97%); border: #cccccc">
+          <span>
+            0
+          </span>
         </label>
       </div>
       <div style="flex-grow: 1">
@@ -33,11 +32,31 @@
         <div
           style="display: grid; grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr;gap: 1em;align-items: center;justify-items: center;"
           class="button-container">
-          <button style="color: #cccccc; background: hsl(183, 100%, 15%); border-radius: 5px; font-family: monospace">5%</button>
-          <button style="color: #cccccc; background: hsl(183, 100%, 15%); border-radius: 5px; font-family: monospace">10%</button>
-          <button style="color: #cccccc; background: hsl(183, 100%, 15%); border-radius: 5px; font-family: monospace">15%</button>
-          <button style="color: #cccccc; background: hsl(183, 100%, 15%); border-radius: 5px; font-family: monospace">25%</button>
-          <button style="color: #cccccc; background: hsl(183, 100%, 15%); border-radius: 5px; font-family: monospace">50%</button>
+          <button class="button">
+            <span class="button__text">
+              5%
+            </span>
+          </button>
+          <button class="button">
+            <span class="button__text">
+              10%
+            </span>
+          </button>
+          <button class="button">
+            <span class="button__text">
+              15%
+            </span>
+          </button>
+          <button class="button">
+            <span class="button__text">
+              25%
+            </span>
+          </button>
+          <button class="button">
+            <span class="button__text">
+              50%
+            </span>
+          </button>
           <label>
             <input style="background: hsl(189, 41%, 97%)">
           </label>
@@ -76,9 +95,11 @@
           $0.00
         </div>
       </div>
-      <div style="flex-grow: 10;display: flex;flex-direction: column;justify-content: flex-end">
-        <button style="background: hsl(172, 67%, 45%);width: 100%;height: 50px; font-family: monospace">
-          RESET
+      <div style="flex-grow: 10;display: flex;flex-direction: column;justify-content: flex-end;width: 100%">
+        <button class="button" style="background: hsl(172, 67%, 45%); display: flex; width: 100%">
+            <span class="button__text" style="color: hsl(183, 100%, 15%)">
+              RESET
+            </span>
         </button>
       </div>
     </div>

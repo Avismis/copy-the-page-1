@@ -1,0 +1,42 @@
+
+* {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+
+}
+
+.wholeSquare {
+  color: white;
+  font-weight: bolder;
+  width: 80%;
+  height: 900px;
+  background: #b1e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px
+}
+.wholeSquare__imagen {
+  padding: 50px
+}
+.button-container button, .button-container input {
+  width: 7em;
+  height: 4em;
+}
+
+.button {
+  color: #cccccc;
+  background: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  width: 7em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__text {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
